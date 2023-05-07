@@ -8,5 +8,7 @@ RUN npm ci
 
 COPY . .
 
+EXPOSE 80/tcp
+
 CMD ["npm", "start"]
 
