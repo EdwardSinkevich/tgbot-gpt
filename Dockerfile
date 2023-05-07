@@ -8,7 +8,9 @@ RUN npm ci
 
 COPY . .
 
-EXPOSE 80/tcp
+ENV PORT=3000
+
+EXPOSE $PORT
 
 CMD ["npm", "start"]
 

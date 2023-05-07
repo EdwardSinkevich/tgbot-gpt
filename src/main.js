@@ -3,6 +3,11 @@ import { message } from 'telegraf/filters';
 import { code } from 'telegraf/format';
 import { ogg } from './ogg.js';
 import { openai } from './openai.js';
+import express from 'express';
+
+const app = express();
+
+app.listen(3000, () => {});
 
 const INITIAL_SESSION = {
   messages: [],
